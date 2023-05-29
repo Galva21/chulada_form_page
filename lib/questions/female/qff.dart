@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:chulada_form_page/providers/info_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -44,7 +45,7 @@ class _QuestionFemaleFState extends State<QuestionFemaleF> {
           filter: ImageFilter.blur(sigmaX: 1.0, sigmaY: 1.0),
           child: SingleChildScrollView(
             child: Padding(
-              padding: const EdgeInsets.all(40.0),
+              padding: const EdgeInsets.all(15.0),
               child: Center(
                 child: cargando
                     ? Column(
@@ -67,6 +68,7 @@ class _QuestionFemaleFState extends State<QuestionFemaleF> {
                             scale: 3,
                           ),
                           Text(
+                            textAlign: TextAlign.center,
                             titulo,
                             style: GoogleFonts.dancingScript(
                               fontSize: 50,
@@ -75,18 +77,24 @@ class _QuestionFemaleFState extends State<QuestionFemaleF> {
                           const SizedBox(
                             height: 25,
                           ),
-                          Padding(
-                            padding:
-                                const EdgeInsets.symmetric(horizontal: 300.0),
-                            child: Text(
+                          Container(
+                            width: MediaQuery.of(context).size.width * 0.8,
+                            child: AutoSizeText(
+                              maxLines: 10,
+                              textAlign: TextAlign.center,
                               info_provider.textoMostrar,
                               style: GoogleFonts.caveat(
                                 color: Colors.black87,
                                 fontWeight: FontWeight.w900,
-                                fontSize: 50,
+                                fontSize: 30
                               ),
                             ),
                           ),
+                          Image.network(
+                            info_provider.urlImagen,
+                            height: 500,
+                            width: 550,
+                          )
                         ],
                       ),
               ),

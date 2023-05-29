@@ -34,21 +34,24 @@ class _QuestionFemale33State extends State<QuestionFemale33> {
           filter: ImageFilter.blur(sigmaX: 5.0, sigmaY: 5.0),
           child: SingleChildScrollView(
             child: Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.all(0.0),
               child: Center(
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
                     Image.asset(
                       'assets/images/chulada.png',
                       scale: 3,
                     ),
                     Text(
+                      textAlign: TextAlign.center,
                       '¿Qué corte sueles utilizar?',
                       style: GoogleFonts.robotoSlab(
                         fontSize: 50,
                       ),
                     ),
                     Text(
+                      textAlign: TextAlign.center,
                       'Parte de arriba',
                       style: GoogleFonts.robotoSlab(
                         fontSize: 25,

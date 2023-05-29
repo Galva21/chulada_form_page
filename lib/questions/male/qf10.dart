@@ -42,7 +42,7 @@ class _QuestionFemale100State extends State<QuestionFemale100> {
           child: SingleChildScrollView(
             scrollDirection: Axis.vertical,
             child: Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.all(0.0),
               child: Center(
                 child: Column(
                   children: <Widget>[
@@ -51,6 +51,7 @@ class _QuestionFemale100State extends State<QuestionFemale100> {
                       scale: 3,
                     ),
                     Text(
+                      textAlign: TextAlign.center,
                       '¿A que silueta se asemeja tu cuerpo?',
                       style: GoogleFonts.robotoSlab(
                         fontSize: 50,
@@ -60,6 +61,7 @@ class _QuestionFemale100State extends State<QuestionFemale100> {
                       height: 25,
                     ),
                     Wrap(
+                      spacing: 20,
                       direction: Axis.horizontal,
                       children: [
                         BotonImagen1(seleccionProvider),

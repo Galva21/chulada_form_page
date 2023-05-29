@@ -33,7 +33,7 @@ class _QuestionFemale88State extends State<QuestionFemale88> {
           filter: ImageFilter.blur(sigmaX: 5.0, sigmaY: 5.0),
           child: SingleChildScrollView(
             child: Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.all(0.0),
               child: Center(
                 child: Column(
                   children: <Widget>[
@@ -42,12 +42,14 @@ class _QuestionFemale88State extends State<QuestionFemale88> {
                       scale: 3,
                     ),
                     Text(
+                      textAlign: TextAlign.center,
                       '¿Qué te gustaría destacar?',
                       style: GoogleFonts.robotoSlab(
                         fontSize: 50,
                       ),
                     ),
                     Text(
+                      textAlign: TextAlign.center,
                       'Piernas',
                       style: GoogleFonts.robotoSlab(
                         fontSize: 25,

@@ -37,7 +37,7 @@ class _QuestionFemale177State extends State<QuestionFemale177> {
           filter: ImageFilter.blur(sigmaX: 5.0, sigmaY: 5.0),
           child: SingleChildScrollView(
             child: Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.all(0.0),
               child: Center(
                 child: Column(
                   children: <Widget>[
@@ -46,6 +46,7 @@ class _QuestionFemale177State extends State<QuestionFemale177> {
                       scale: 3,
                     ),
                     Text(
+                      textAlign: TextAlign.center,
                       '¿Qué calzado te gustaría evitar siempre?',
                       style: GoogleFonts.robotoSlab(
                         fontSize: 50,
@@ -54,8 +55,8 @@ class _QuestionFemale177State extends State<QuestionFemale177> {
                     const SizedBox(
                       height: 25,
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
+                    Wrap(
+                      spacing: 50,
                       children: [
                         Wrap(
                           direction: Axis.vertical,
@@ -67,7 +68,7 @@ class _QuestionFemale177State extends State<QuestionFemale177> {
                             BotonWidget3(),
                           ],
                         ),
-                        SizedBox(width: 20),
+                        SizedBox(height: 50),
                         Wrap(
                           direction: Axis.vertical,
                           children: [
@@ -175,7 +176,7 @@ class _QuestionFemale177State extends State<QuestionFemale177> {
       child: Column(
         children: [
           Text(
-            "ZAPATOS DE TACÓN",
+            "ZAPATOS DE LISOS",
             style: GoogleFonts.robotoSlab(
                 fontSize: 25, fontStyle: FontStyle.normal, color: colorTexto),
           ),
@@ -222,7 +223,7 @@ class _QuestionFemale177State extends State<QuestionFemale177> {
       child: Column(
         children: [
           Text(
-            "ZAPATOS PLANOS",
+            "DEPORTIVAS",
             style: GoogleFonts.robotoSlab(
                 fontSize: 25, fontStyle: FontStyle.normal, color: colorTexto),
           ),
@@ -269,7 +270,7 @@ class _QuestionFemale177State extends State<QuestionFemale177> {
       child: Column(
         children: [
           Text(
-            "BOTAS",
+            "BOTINES",
             style: GoogleFonts.robotoSlab(
                 fontSize: 25, fontStyle: FontStyle.normal, color: colorTexto),
           ),
@@ -316,7 +317,7 @@ class _QuestionFemale177State extends State<QuestionFemale177> {
       child: Column(
         children: [
           Text(
-            "BOTINES",
+            "BOTAS",
             style: GoogleFonts.robotoSlab(
                 fontSize: 25, fontStyle: FontStyle.normal, color: colorTexto),
           ),
@@ -363,7 +364,7 @@ class _QuestionFemale177State extends State<QuestionFemale177> {
       child: Column(
         children: [
           Text(
-            "DEPORTIVAS",
+            "MOCASINES",
             style: GoogleFonts.robotoSlab(
                 fontSize: 25, fontStyle: FontStyle.normal, color: colorTexto),
           ),

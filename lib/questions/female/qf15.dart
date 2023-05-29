@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:chulada_form_page/questions/female/qf16.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -38,7 +39,7 @@ class _QuestionFemale15State extends State<QuestionFemale15> {
           child: SingleChildScrollView(
             child: SingleChildScrollView(
               child: Padding(
-                padding: const EdgeInsets.all(20.0),
+                padding: const EdgeInsets.all(0.0),
                 child: Center(
                   child: Column(
                     children: <Widget>[
@@ -47,6 +48,7 @@ class _QuestionFemale15State extends State<QuestionFemale15> {
                         scale: 3,
                       ),
                       Text(
+                        textAlign: TextAlign.center,
                         '¿Qué esperas de CHULAD@?',
                         style: GoogleFonts.robotoSlab(
                           fontSize: 50,
@@ -116,14 +118,15 @@ class _QuestionFemale15State extends State<QuestionFemale15> {
           borderRadius: BorderRadius.all(Radius.circular(50)),
         ),
       ),
-      child: Column(
-        children: [
-          Text(
-            "1. Prendas atemporales para crear fondo de armario.",
-            style: GoogleFonts.robotoSlab(
-                fontSize: 25, fontStyle: FontStyle.normal, color: colorTexto),
-          ),
-        ],
+      child: Container(
+        width: MediaQuery.of(context).size.width * 0.5,
+        child: AutoSizeText(
+          textAlign: TextAlign.center,
+          maxLines: 3,
+          "1. Prendas atemporales para crear fondo de armario.",
+          style: GoogleFonts.robotoSlab(
+              fontStyle: FontStyle.normal, color: colorTexto, fontSize: 25),
+        ),
       ),
     );
   }
@@ -163,14 +166,15 @@ class _QuestionFemale15State extends State<QuestionFemale15> {
           borderRadius: BorderRadius.all(Radius.circular(50)),
         ),
       ),
-      child: Column(
-        children: [
-          Text(
-            "2. Sobre todo básicos y de vez en cuando alguna prenda más especial.",
-            style: GoogleFonts.robotoSlab(
-                fontSize: 25, fontStyle: FontStyle.normal, color: colorTexto),
-          ),
-        ],
+      child: Container(
+        width: MediaQuery.of(context).size.width * 0.5,
+        child: AutoSizeText(
+          textAlign: TextAlign.center,
+          maxLines: 3,
+          "2. Sobre todo básicos y de vez en cuando alguna prenda más especial.",
+          style: GoogleFonts.robotoSlab(
+              fontStyle: FontStyle.normal, color: colorTexto, fontSize: 25),
+        ),
       ),
     );
   }
@@ -210,14 +214,15 @@ class _QuestionFemale15State extends State<QuestionFemale15> {
           borderRadius: BorderRadius.all(Radius.circular(50)),
         ),
       ),
-      child: Column(
-        children: [
-          Text(
-            "3. Prendas actuales y “con toque” que refresquen mi estilo personal.",
-            style: GoogleFonts.robotoSlab(
-                fontSize: 25, fontStyle: FontStyle.normal, color: colorTexto),
-          ),
-        ],
+      child: Container(
+        width: MediaQuery.of(context).size.width * 0.5,
+        child: AutoSizeText(
+          textAlign: TextAlign.center,
+          maxLines: 3,
+          "3. Prendas actuales y “con toque” que refresquen mi estilo personal.",
+          style: GoogleFonts.robotoSlab(
+              fontStyle: FontStyle.normal, color: colorTexto, fontSize: 25),
+        ),
       ),
     );
   }
@@ -257,14 +262,15 @@ class _QuestionFemale15State extends State<QuestionFemale15> {
           borderRadius: BorderRadius.all(Radius.circular(50)),
         ),
       ),
-      child: Column(
-        children: [
-          Text(
-            "4. Descubrir marcas y tendencias que encajen conmigo.",
-            style: GoogleFonts.robotoSlab(
-                fontSize: 25, fontStyle: FontStyle.normal, color: colorTexto),
-          ),
-        ],
+      child: Container(
+        width: MediaQuery.of(context).size.width * 0.5,
+        child: AutoSizeText(
+          textAlign: TextAlign.center,
+          maxLines: 3,
+          "4. Descubrir marcas y tendencias que encajen conmigo.",
+          style: GoogleFonts.robotoSlab(
+              fontStyle: FontStyle.normal, color: colorTexto, fontSize: 25),
+        ),
       ),
     );
   }
@@ -304,14 +310,15 @@ class _QuestionFemale15State extends State<QuestionFemale15> {
           borderRadius: BorderRadius.all(Radius.circular(50)),
         ),
       ),
-      child: Column(
-        children: [
-          Text(
-            "5. Novedades. Disfruto experimentando con nuevas posibilidades de estilo.",
-            style: GoogleFonts.robotoSlab(
-                fontSize: 25, fontStyle: FontStyle.normal, color: colorTexto),
-          ),
-        ],
+      child: Container(
+        width: MediaQuery.of(context).size.width * 0.5,
+        child: AutoSizeText(
+          textAlign: TextAlign.center,
+          maxLines: 3,
+          "5. Novedades. Disfruto experimentando con nuevas posibilidades de estilo.",
+          style: GoogleFonts.robotoSlab(
+              fontStyle: FontStyle.normal, color: colorTexto, fontSize: 25),
+        ),
       ),
     );
   }

@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:chulada_form_page/questions/female/qf1.dart';
 import 'package:chulada_form_page/questions/male/qf1.dart';
 import 'package:flutter/material.dart';
@@ -28,27 +29,30 @@ class _HomePageState extends State<HomePage> {
             fit: BoxFit.fill,
           ),
         ),
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(80, 150, 80, 0),
-          child: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: <Widget>[
-                Text(
-                  'SELECCIONE SU GÉNERO',
-                  style: GoogleFonts.robotoSlab(fontSize: 50),
-                ),
-                const SizedBox(
-                  height: 50,
-                ),
-                Wrap(
-                  children: [
-                    BotonMujerWidget(),
-                    const SizedBox(width: 150),
-                    BotonHombreWidget(),
-                  ],
-                )
-              ],
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(0, 150, 0, 0),
+            child: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: <Widget>[
+                  AutoSizeText(
+                    'SELECCIONE SU GÉNERO',
+                    style: GoogleFonts.robotoSlab(fontSize: 25),
+                    minFontSize: 25,
+                  ),
+                  const SizedBox(
+                    height: 50,
+                  ),
+                  Wrap(
+                    children: [
+                      BotonMujerWidget(),
+                      const SizedBox(width: 150, height: 20,),
+                      BotonHombreWidget(),
+                    ],
+                  )
+                ],
+              ),
             ),
           ),
         ),

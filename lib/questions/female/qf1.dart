@@ -45,6 +45,7 @@ class _QuestionFemale1State extends State<QuestionFemale1> {
                       scale: 3,
                     ),
                     Text(
+                      textAlign: TextAlign.center,
                       '¿Cómo vistes en tu tiempo libre?',
                       style: GoogleFonts.robotoSlab(
                         fontSize: 50,

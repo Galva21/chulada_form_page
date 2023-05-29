@@ -39,7 +39,7 @@ class _QuestionFemale166State extends State<QuestionFemale166> {
           filter: ImageFilter.blur(sigmaX: 5.0, sigmaY: 5.0),
           child: SingleChildScrollView(
             child: Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.all(0.0),
               child: Center(
                 child: Column(
                   children: <Widget>[
@@ -48,6 +48,7 @@ class _QuestionFemale166State extends State<QuestionFemale166> {
                       scale: 3,
                     ),
                     Text(
+                      textAlign: TextAlign.center,
                       '¿Hay alguna prenda que te gustaría evitar?',
                       style: GoogleFonts.robotoSlab(
                         fontSize: 50,
@@ -56,32 +57,32 @@ class _QuestionFemale166State extends State<QuestionFemale166> {
                     const SizedBox(
                       height: 25,
                     ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
+                    Wrap(
+                      spacing: 50,
                       children: [
                         Wrap(
                           direction: Axis.horizontal,
                           children: [
                             BotonWidget1(),
-                            const SizedBox(width: 50),
+                            const SizedBox(height: 50),
                             BotonWidget2(),
-                            const SizedBox(width: 50),
+                            const SizedBox(height: 50),
                             BotonWidget3(),
-                            const SizedBox(width: 50),
+                            const SizedBox(height: 50),
                             BotonWidget4(),
                           ],
                         ),
-                        SizedBox(height: 20),
+                        SizedBox(height: 50),
                         Wrap(
                           direction: Axis.horizontal,
                           children: [
                             BotonWidget5(),
-                            const SizedBox(width: 50),
+                            const SizedBox(height: 50),
                             BotonWidget6(),
-                            const SizedBox(width: 50),
-                            BotonWidget7(),
-                            const SizedBox(width: 50),
-                            BotonWidget8(),
+                            // const SizedBox(height: 50),
+                            // BotonWidget7(),
+                            // const SizedBox(height: 50),
+                            // BotonWidget8(),
                           ],
                         ),
                       ],
@@ -134,7 +135,7 @@ class _QuestionFemale166State extends State<QuestionFemale166> {
       child: Column(
         children: [
           Text(
-            "VESTIDOS",
+            "CAMISAS",
             style: GoogleFonts.robotoSlab(
                 fontSize: 25, fontStyle: FontStyle.normal, color: colorTexto),
           ),
@@ -181,7 +182,7 @@ class _QuestionFemale166State extends State<QuestionFemale166> {
       child: Column(
         children: [
           Text(
-            "CAMISAS",
+            "CAMISETAS",
             style: GoogleFonts.robotoSlab(
                 fontSize: 25, fontStyle: FontStyle.normal, color: colorTexto),
           ),
@@ -228,7 +229,7 @@ class _QuestionFemale166State extends State<QuestionFemale166> {
       child: Column(
         children: [
           Text(
-            "CAMISETAS",
+            "PANTALONES",
             style: GoogleFonts.robotoSlab(
                 fontSize: 25, fontStyle: FontStyle.normal, color: colorTexto),
           ),
@@ -275,7 +276,7 @@ class _QuestionFemale166State extends State<QuestionFemale166> {
       child: Column(
         children: [
           Text(
-            "PANTALONES",
+            "PRENDAS EXTERIORES",
             style: GoogleFonts.robotoSlab(
                 fontSize: 25, fontStyle: FontStyle.normal, color: colorTexto),
           ),
@@ -322,7 +323,7 @@ class _QuestionFemale166State extends State<QuestionFemale166> {
       child: Column(
         children: [
           Text(
-            "FALDAS",
+            "CORBATAS",
             style: GoogleFonts.robotoSlab(
                 fontSize: 25, fontStyle: FontStyle.normal, color: colorTexto),
           ),
@@ -369,7 +370,7 @@ class _QuestionFemale166State extends State<QuestionFemale166> {
       child: Column(
         children: [
           Text(
-            "PRENDAS EXTERIORES",
+            "TRAJES",
             style: GoogleFonts.robotoSlab(
                 fontSize: 25, fontStyle: FontStyle.normal, color: colorTexto),
           ),

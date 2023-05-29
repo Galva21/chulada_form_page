@@ -115,7 +115,7 @@ class _QuestionFemale22State extends State<QuestionFemale22> {
           width: tamanioTajetaW - 20,
           height: tamanioTajetaH - 20,
           child: Image.network(
-            'https://i.postimg.cc/N0L19sdp/b1.jpg',
+            'https://i.postimg.cc/C5N6mMk9/b1.jpg',
             fit: BoxFit.fill,
           ),
         ),
@@ -162,7 +162,7 @@ class _QuestionFemale22State extends State<QuestionFemale22> {
           width: tamanioTajetaW - 20,
           height: tamanioTajetaH - 20,
           child: Image.network(
-            'https://i.postimg.cc/25JnnsJm/b2.jpg',
+            'https://i.postimg.cc/qM15KRk3/b2.jpg',
             fit: BoxFit.fill,
           ),
         ),
@@ -209,7 +209,7 @@ class _QuestionFemale22State extends State<QuestionFemale22> {
           width: tamanioTajetaW - 20,
           height: tamanioTajetaH - 20,
           child: Image.network(
-            'https://i.postimg.cc/k4bKsj3S/b3.jpg',
+            'https://i.postimg.cc/wTqr3Jdz/b3.jpg',
             fit: BoxFit.fill,
           ),
         ),
@@ -256,7 +256,7 @@ class _QuestionFemale22State extends State<QuestionFemale22> {
           width: tamanioTajetaW - 20,
           height: tamanioTajetaH - 20,
           child: Image.network(
-            'https://i.postimg.cc/TYGgjqky/b4.jpg',
+            'https://i.postimg.cc/8zsnmS5n/b4.jpg',
             fit: BoxFit.fill,
           ),
         ),

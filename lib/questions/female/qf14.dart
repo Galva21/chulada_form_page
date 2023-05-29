@@ -36,7 +36,7 @@ class _QuestionFemale14State extends State<QuestionFemale14> {
           filter: ImageFilter.blur(sigmaX: 5.0, sigmaY: 5.0),
           child: SingleChildScrollView(
             child: Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.all(0.0),
               child: Center(
                 child: Column(
                   children: <Widget>[
@@ -45,12 +45,14 @@ class _QuestionFemale14State extends State<QuestionFemale14> {
                       scale: 3,
                     ),
                     Text(
+                      textAlign: TextAlign.center,
                       '¿En qué quieres que se centre CHULAD@?',
                       style: GoogleFonts.robotoSlab(
                         fontSize: 50,
                       ),
                     ),
                     Text(
+                      textAlign: TextAlign.center,
                       'Noche',
                       style: GoogleFonts.robotoSlab(
                         fontSize: 25,
@@ -61,7 +63,8 @@ class _QuestionFemale14State extends State<QuestionFemale14> {
                       height: 25,
                     ),
                     Wrap(
-                      direction: Axis.horizontal,
+                      spacing: 5,
+                      direction: Axis.vertical,
                       children: [
                         Column(
                           children: [

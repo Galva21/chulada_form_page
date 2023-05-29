@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:chulada_form_page/providers/info_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -75,18 +76,24 @@ class _QuestionFemaleFFState extends State<QuestionFemaleFF> {
                           const SizedBox(
                             height: 25,
                           ),
-                          Padding(
-                            padding:
-                                const EdgeInsets.symmetric(horizontal: 300.0),
-                            child: Text(
+                          Container(
+                            width: MediaQuery.of(context).size.width * 0.8,
+                            child: AutoSizeText(
+                              maxLines: 10,
+                              textAlign: TextAlign.center,
                               info_provider.textoMostrarr,
                               style: GoogleFonts.caveat(
                                 color: Colors.black87,
                                 fontWeight: FontWeight.w900,
-                                fontSize: 50,
+                                fontSize: 30
                               ),
                             ),
                           ),
+                          Image.network(
+                            info_provider.urlImagen,
+                            height: 500,
+                            width: 550,
+                          )
                         ],
                       ),
               ),

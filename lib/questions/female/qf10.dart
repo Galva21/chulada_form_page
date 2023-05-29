@@ -42,15 +42,17 @@ class _QuestionFemale10State extends State<QuestionFemale10> {
           child: SingleChildScrollView(
             scrollDirection: Axis.vertical,
             child: Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.only(left: 10),
               child: Center(
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Image.asset(
                       'assets/images/chulada.png',
                       scale: 3,
                     ),
                     Text(
+                      textAlign: TextAlign.center,
                       '¿A que silueta se asemeja tu cuerpo?',
                       style: GoogleFonts.robotoSlab(
                         fontSize: 50,
@@ -63,9 +65,9 @@ class _QuestionFemale10State extends State<QuestionFemale10> {
                       direction: Axis.horizontal,
                       children: [
                         BotonImagen1(seleccionProvider),
-                        SizedBox(width: 20),
+                        SizedBox(width: 20, height: 10,),
                         BotonImagen2(seleccionProvider),
-                        SizedBox(width: 20),
+                        SizedBox(width: 20, height: 10,),
                         BotonImagen3(seleccionProvider),
                       ],
                     ),
@@ -76,9 +78,9 @@ class _QuestionFemale10State extends State<QuestionFemale10> {
                       direction: Axis.horizontal,
                       children: [
                         BotonImagen4(seleccionProvider),
-                        SizedBox(width: 20),
+                        SizedBox(width: 20, height: 10,),
                         BotonImagen5(seleccionProvider),
-                        SizedBox(width: 20),
+                        SizedBox(width: 20, height: 10,),
                         BotonImagen6(seleccionProvider),
                       ],
                     ),
